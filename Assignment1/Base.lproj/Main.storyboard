@@ -15,12 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q60-BF-hfy">
-                                <rect key="frame" x="24" y="90" width="366" height="44"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your Dog?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-34-WHx">
                                 <rect key="frame" x="32" y="196" width="350" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
@@ -28,36 +22,58 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age in years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-9E-sTb">
-                                <rect key="frame" x="154" y="275" width="107" height="34"/>
+                                <rect key="frame" x="20" y="275" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-bk-Qu0">
-                                <rect key="frame" x="138" y="361" width="138" height="30"/>
+                                <rect key="frame" x="20" y="361" width="374" height="30"/>
                                 <state key="normal" title="Age in Human Years"/>
+                                <connections>
+                                    <action selector="ageButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tn9-Lm-yT9"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-Pv-QM7">
+                                <rect key="frame" x="20" y="431" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q60-BF-hfy">
+                                <rect key="frame" x="24" y="90" width="366" height="44"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUw-9E-sTb" secondAttribute="trailing" constant="153" id="CVl-y7-Hav"/>
                             <constraint firstItem="Pgj-34-WHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="HWY-ct-Q3G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUw-9E-sTb" secondAttribute="trailing" constant="20" id="Jqx-3x-Qme"/>
+                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ox2-3T-p6D"/>
                             <constraint firstItem="Pgj-34-WHx" firstAttribute="top" secondItem="Q60-BF-hfy" secondAttribute="bottom" constant="62" id="QVa-WB-lai"/>
-                            <constraint firstItem="yUw-9E-sTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="Tla-wO-K7R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nF-Pv-QM7" secondAttribute="trailing" constant="20" id="XdB-7Q-byt"/>
+                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="top" secondItem="KdB-bk-Qu0" secondAttribute="bottom" constant="40" id="a2R-XF-yg4"/>
                             <constraint firstItem="yUw-9E-sTb" firstAttribute="top" secondItem="Pgj-34-WHx" secondAttribute="bottom" constant="55" id="ae4-nc-nZh"/>
+                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bZ3-Sh-rUS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pgj-34-WHx" secondAttribute="trailing" constant="32" id="e0E-5l-nP8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdB-bk-Qu0" secondAttribute="trailing" constant="20" id="eXC-qT-K48"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q60-BF-hfy" secondAttribute="trailing" constant="24" id="gTl-5s-olp"/>
                             <constraint firstItem="Q60-BF-hfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="hrP-Kf-C8U"/>
                             <constraint firstItem="KdB-bk-Qu0" firstAttribute="top" secondItem="yUw-9E-sTb" secondAttribute="bottom" constant="52" id="oX1-o1-AJe"/>
+                            <constraint firstItem="yUw-9E-sTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p1T-UP-AAo"/>
                             <constraint firstItem="Q60-BF-hfy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="uzN-96-qIR"/>
-                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="vvJ-r7-zNn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdB-bk-Qu0" secondAttribute="trailing" constant="138" id="xx1-Wy-1kj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ageInYears" destination="yUw-9E-sTb" id="IoW-eQ-gaH"/>
+                        <outlet property="outputLabel" destination="6nF-Pv-QM7" id="icv-0X-3j7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="-109" y="59"/>
         </scene>
     </scenes>
 </document>
