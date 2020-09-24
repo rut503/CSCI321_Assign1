@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,57 +12,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your Dog?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-34-WHx">
-                                <rect key="frame" x="32" y="196" width="350" height="24"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <rect key="frame" x="91.5" y="109.5" width="192" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age in years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-9E-sTb">
-                                <rect key="frame" x="121" y="275" width="171" height="34"/>
+                                <rect key="frame" x="134" y="153.5" width="107" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-bk-Qu0">
-                                <rect key="frame" x="20" y="361" width="374" height="30"/>
-                                <state key="normal" title="Age in Human Years"/>
+                                <rect key="frame" x="92.5" y="207.5" width="190" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Find age in human years">
+                                    <color key="titleColor" red="0.013158468065755602" green="0.19361455292149587" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ageButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tn9-Lm-yT9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-Pv-QM7">
-                                <rect key="frame" x="20" y="431" width="374" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-Pv-QM7">
+                                <rect key="frame" x="187.5" y="260.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q60-BF-hfy">
-                                <rect key="frame" x="24" y="90" width="366" height="44"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="34.5" y="40" width="306" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                <color key="textColor" red="0.011587498518168465" green="0.1704992050641766" blue="0.88061151649746194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="G70-uF-a16">
+                                <rect key="frame" x="16" y="300.5" width="343" height="326"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Pgj-34-WHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="HWY-ct-Q3G"/>
-                            <constraint firstItem="yUw-9E-sTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="KQZ-or-Wbf"/>
-                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ox2-3T-p6D"/>
-                            <constraint firstItem="Pgj-34-WHx" firstAttribute="top" secondItem="Q60-BF-hfy" secondAttribute="bottom" constant="62" id="QVa-WB-lai"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nF-Pv-QM7" secondAttribute="trailing" constant="20" id="XdB-7Q-byt"/>
-                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="top" secondItem="KdB-bk-Qu0" secondAttribute="bottom" constant="40" id="a2R-XF-yg4"/>
-                            <constraint firstItem="yUw-9E-sTb" firstAttribute="top" secondItem="Pgj-34-WHx" secondAttribute="bottom" constant="55" id="ae4-nc-nZh"/>
-                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bZ3-Sh-rUS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pgj-34-WHx" secondAttribute="trailing" constant="32" id="e0E-5l-nP8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdB-bk-Qu0" secondAttribute="trailing" constant="20" id="eXC-qT-K48"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q60-BF-hfy" secondAttribute="trailing" constant="24" id="gTl-5s-olp"/>
-                            <constraint firstItem="Q60-BF-hfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="hrP-Kf-C8U"/>
-                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="top" secondItem="yUw-9E-sTb" secondAttribute="bottom" constant="52" id="oX1-o1-AJe"/>
-                            <constraint firstItem="Q60-BF-hfy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="uzN-96-qIR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUw-9E-sTb" secondAttribute="trailing" constant="122" id="w8f-ob-oyR"/>
+                            <constraint firstItem="G70-uF-a16" firstAttribute="top" secondItem="6nF-Pv-QM7" secondAttribute="bottom" constant="40" id="1OT-0e-gxG"/>
+                            <constraint firstItem="G70-uF-a16" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.488756" id="2uo-ps-0lP"/>
+                            <constraint firstItem="yUw-9E-sTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3TF-QS-z1b"/>
+                            <constraint firstItem="Q60-BF-hfy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="9HH-6q-7Sg"/>
+                            <constraint firstItem="Pgj-34-WHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDL-2d-Eya"/>
+                            <constraint firstItem="yUw-9E-sTb" firstAttribute="top" secondItem="Pgj-34-WHx" secondAttribute="bottom" constant="20" id="FaB-jO-p90"/>
+                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLs-a5-kJZ"/>
+                            <constraint firstItem="Q60-BF-hfy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KvW-bQ-x0g"/>
+                            <constraint firstItem="Pgj-34-WHx" firstAttribute="top" secondItem="Q60-BF-hfy" secondAttribute="bottom" constant="20" id="Lft-Lo-RTO"/>
+                            <constraint firstItem="G70-uF-a16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRx-vb-hQz"/>
+                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R6y-ab-ebP"/>
+                            <constraint firstItem="KdB-bk-Qu0" firstAttribute="top" secondItem="yUw-9E-sTb" secondAttribute="bottom" constant="20" id="TAc-n4-UeP"/>
+                            <constraint firstItem="G70-uF-a16" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.914667" id="kkf-5V-sQS"/>
+                            <constraint firstItem="6nF-Pv-QM7" firstAttribute="top" secondItem="KdB-bk-Qu0" secondAttribute="bottom" constant="20" id="pej-QQ-ZJZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -73,7 +78,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110.14492753623189" y="58.928571428571423"/>
+            <point key="canvasLocation" x="-111.2" y="58.920539730134934"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog" width="534" height="663"/>
+    </resources>
 </document>

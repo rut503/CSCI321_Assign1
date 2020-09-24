@@ -1,25 +1,80 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9I-kN-8UU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="yWg-Is-xFY">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="X9I-kN-8UU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="396-w9-NcO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your Dog?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-tT-JWS">
+                                <rect key="frame" x="111" y="153.5" width="192" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age in years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDU-6i-U4k">
+                                <rect key="frame" x="153.5" y="197.5" width="107" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlu-eD-1Ka">
+                                <rect key="frame" x="112" y="251.5" width="190" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Find age in human years">
+                                    <color key="titleColor" red="0.01315846807" green="0.19361455289999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIq-bE-Wmf">
+                                <rect key="frame" x="207" y="304.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRc-cO-7Lq">
+                                <rect key="frame" x="54" y="84" width="306" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                <color key="textColor" red="0.01158749852" green="0.1704992051" blue="0.88061151650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-TN-0tc">
+                                <rect key="frame" x="17.5" y="344.5" width="379" height="438"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tJe-TN-0tc" firstAttribute="height" secondItem="396-w9-NcO" secondAttribute="height" multiplier="0.488756" id="1po-6s-xvI"/>
+                            <constraint firstItem="tJe-TN-0tc" firstAttribute="top" secondItem="AIq-bE-Wmf" secondAttribute="bottom" constant="40" id="Deo-tq-FPX"/>
+                            <constraint firstItem="sRc-cO-7Lq" firstAttribute="top" secondItem="648-W0-DdU" secondAttribute="top" constant="40" id="G5t-8R-wtn"/>
+                            <constraint firstItem="Hlu-eD-1Ka" firstAttribute="top" secondItem="RDU-6i-U4k" secondAttribute="bottom" constant="20" id="O6p-Tk-XID"/>
+                            <constraint firstItem="tJe-TN-0tc" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="Pik-Fy-oWf"/>
+                            <constraint firstItem="AIq-bE-Wmf" firstAttribute="top" secondItem="Hlu-eD-1Ka" secondAttribute="bottom" constant="20" id="SJ4-wf-MXP"/>
+                            <constraint firstItem="5zx-tT-JWS" firstAttribute="top" secondItem="sRc-cO-7Lq" secondAttribute="bottom" constant="20" id="Tk1-qW-5M3"/>
+                            <constraint firstItem="tJe-TN-0tc" firstAttribute="width" secondItem="396-w9-NcO" secondAttribute="width" multiplier="0.914667" id="YcJ-Nm-MyT"/>
+                            <constraint firstItem="5zx-tT-JWS" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="cze-a5-jhT"/>
+                            <constraint firstItem="Hlu-eD-1Ka" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="eTi-Gj-Yj3"/>
+                            <constraint firstItem="RDU-6i-U4k" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="fQS-OQ-eKj"/>
+                            <constraint firstItem="RDU-6i-U4k" firstAttribute="top" secondItem="5zx-tT-JWS" secondAttribute="bottom" constant="20" id="ilP-qJ-ofG"/>
+                            <constraint firstItem="AIq-bE-Wmf" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="o7u-vB-OM2"/>
+                            <constraint firstItem="sRc-cO-7Lq" firstAttribute="centerX" secondItem="396-w9-NcO" secondAttribute="centerX" id="wQe-IA-5Zu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="648-W0-DdU"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PI7-cn-xFp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-111.2" y="58.920539730134934"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog" width="534" height="663"/>
+    </resources>
 </document>
